@@ -1,0 +1,51 @@
+<div class="container py-5">
+    <div class="add-product-card mx-auto p-4 bg-white shadow-lg rounded-3">
+      <h2 class="mb-4 text-center">Agregar Nuevo Producto</h2>
+      
+      <form (ngSubmit)="onAddProduct()" #productForm="ngForm">
+        <div class="mb-3">
+          <label class="form-label">Nombre del Producto</label>
+          <input type="text" class="form-control" 
+                 [(ngModel)]="newProduct.name" name="name" required>
+        </div>
+  
+        <div class="mb-3">
+          <label class="form-label">Descripción</label>
+          <textarea class="form-control" rows="3"
+                    [(ngModel)]="newProduct.description" name="description" required></textarea>
+        </div>
+  
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Precio (€)</label>
+            <input type="number" class="form-control" step="0.01"
+                   [(ngModel)]="newProduct.price" name="price" required>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Categoría</label>
+            <select class="form-select" [(ngModel)]="newProduct.category" name="category">
+              <option value="electronica">Electrónica</option>
+              <option value="hogar">Hogar</option>
+              <option value="moda">Moda</option>
+              <option value="otros">Otros</option>
+            </select>
+          </div>
+        </div>
+  
+        <div class="mb-4">
+          <label class="form-label">Imagen del Producto (URL)</label>
+          <input type="url" class="form-control" 
+                 [(ngModel)]="newProduct.imageUrl" name="imageUrl" required>
+          <small class="text-muted">Pega la URL de una imagen para tu producto</small>
+        </div>
+  
+        <div class="d-flex justify-content-end gap-2">
+          <button type="button" class="btn btn-secondary" 
+                  (click)="cancel()">Cancelar</button>
+          <button type="submit" class="btn btn-primary" 
+                  [disabled]="!productForm.form.valid">Publicar Producto</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

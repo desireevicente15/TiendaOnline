@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "./assets/colors";
+@import "./assets/fonts";
+@import "./assets/animations";
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+:root {
+  --mainColor: rgb(222, 54, 54);
+  --black: #1a1a2e;
+  --white: #FFFFFF;
+  --whiteSmoke: #CAC3CA;
+  --shadow: 0px 4px 8px rgba(21, 21, 21, 0.2);
+}
+
+

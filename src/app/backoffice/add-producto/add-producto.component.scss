@@ -1,0 +1,28 @@
+.add-product-card {
+    max-width: 700px;
+    background: #ffffff;
+    
+    h2 {
+      color: #2c3e50;
+      font-weight: 600;
+    }
+    
+    .form-label {
+      font-weight: 500;
+      color: #34495e;
+    }
+    
+    .form-control, .form-select {
+      border-radius: 8px;
+      &:focus {
+        border-color: #3498db;
+        box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+      }
+    }
+    
+    button[type="submit"] {
+      padding: 0.5rem 1.5rem;
+      border-radius: 8px;
+    }
+  }
+  

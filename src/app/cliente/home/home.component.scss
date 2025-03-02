@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  background-color: var(--black);
+  color: var(--white);
+
+
+  h1 {
+    color: var(--white);
+
+    .highlight {
+      color: var(--mainColor);
+    }
+  }
+
+  .contact-btn {
+    background-color: var(--mainColor);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .login-box {
+    background-color: var(--whiteSmoke);
+    padding: 20px;
+    border-radius: 5px;
+    height: 100%;
+
+    h2 {
+      text-align: center;
+      color: var(--black);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+
+        &:focus {
+          outline-color: var(--mainColor);
+        }
+      }
+
+      button {
+        background-color: var(--mainColor);
+        color: var(--white);
+        border-radius: 5px;
+        padding: 10px;
+        border: none;
+
+        &:hover {
+          opacity: 0.9;
+          cursor: pointer;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--mainColor);
+      text-align: center;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* Estilos para la sección de productos */
+/*
+.container-padre {
+    padding: 20px;
+    text-align: center;
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .productos {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .producto {
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: var(--whiteSmoke);
+            color: var(--black);
+
+            .imagen-placeholder {
+                width: 100%;
+                height: 200px;
+                margin-bottom: 10px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+
+            h2 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+*/

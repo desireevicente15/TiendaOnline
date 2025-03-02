@@ -1,0 +1,27 @@
+header{
+  background-color: var(--black);
+}
+
+nav {
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+/* Para el botón de login */
+.btn-white {
+  flex-shrink: 0; /* Evita que se encoja */
+}
+
+.logo {
+  color: var(--white);
+  font-size: 36px;
+  font-weight: bold;
+  span {
+    color: var(--mainColor);
+  }
+}

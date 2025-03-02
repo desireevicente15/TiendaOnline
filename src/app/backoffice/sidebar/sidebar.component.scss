@@ -1,0 +1,13 @@
+
+.sidebar-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: var(--black);
+
+  &.hide-me {
+    span, h2 {
+      display: none !important;
+    }
+  }
+
+}

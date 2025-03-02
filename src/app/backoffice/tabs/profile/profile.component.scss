@@ -1,0 +1,35 @@
+.profile-container {
+    top: 55px;
+    left: 0;
+    width: 300px;
+    min-width: 300px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    z-index: 100;
+  
+    .profile-option {
+      display: block;
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 14px;
+      color: #333;
+      background-color: transparent;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      transition: background 0.3s ease;
+  
+      &:hover {
+        background-color: #f0f0f5;
+      }
+    }
+  
+    .divider {
+      height: 1px;
+      background-color: #eaeaea;
+      margin: 5px 0;
+    }
+  }
+  

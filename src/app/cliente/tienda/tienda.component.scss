@@ -1,0 +1,148 @@
+.home-container {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+.carousel {
+    width: 50%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.carousel-inner, .carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: none;
+    image-rendering: crisp-edges;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 10%;
+}
+
+.categoria {
+    margin-bottom: 30px;
+}
+
+.categoria h2 {
+    color: white;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 600px;
+    margin: 0 auto; 
+}
+
+.imagen-placeholder {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.imagen-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.producto h3 {
+    color: #1a237e;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.producto .descripcion {
+    color: #555;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.producto .precio {
+    color: var(--mainColor);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*.producto.mas-vendido::after {
+    content: "Más vendido";
+    background-color: #03A9F4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.8em;
+}*/
+
+/*.producto.nuevo::after {
+    content: "Nuevo";
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8em;
+}*/
+
+.producto.oferta .precio-original {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 5px;
+}
+
+/*.producto.oferta::after {
+    content: "Oferta";
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8em;
+}*/ 

@@ -1,0 +1,62 @@
+<div class="image-container w-100 h-100">
+  <div class="perfil-container p-3 bg-white shadow-lg rounded-3 position-relative mx-auto">
+    <div class="perfil-header d-flex align-items-center mb-4">
+      <img src="/vendedora.jpg" alt="Foto" class="seller-avatar rounded-circle me-3">
+      <div>
+        <h2 class="seller-name">{{ sellerName }}</h2>
+        <p class="text-muted">Miembro desde 2021</p>
+      </div>
+    </div>
+
+    <div class="seller-stats d-flex justify-content-between mb-4">
+      <div class="stat-item text-center">
+        <h4>120</h4>
+        <p class="text-muted">Ventas Totales</p>
+      </div>
+      <div class="stat-item text-center">
+        <h4>4.8/5</h4>
+        <p class="text-muted">Valoraciones</p>
+      </div>
+      <div class="stat-item text-center">
+        <h4>15</h4>
+        <p class="text-muted">Productos Activos</p>
+      </div>
+    </div>
+
+    <div class="seller-actions d-flex justify-content-between">
+      <button class="btn btn-secondary" (click)="editProfile(editProfileModal)">Editar Perfil</button>
+      <button class="btn btn-secondary" (click)="addProduct()">Agregar Producto</button>
+      <button class="btn btn-secondary" (click)="viewSales(viewSalesModal)">Ver Ventas</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para Editar Perfil -->
+<ng-template #editProfileModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Editar Perfil</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
+  </div>
+  <div class="modal-body">
+    <label>Nombre:</label>
+    <input type="text" class="form-control" [(ngModel)]="sellerName">
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" (click)="saveProfile(modal)">Guardar</button>
+  </div>
+</ng-template>
+
+<!-- Modal para Ver Ventas -->
+<ng-template #viewSalesModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Historial de Ventas</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
+  </div>
+  <div class="modal-body">
+    <ul>
+      <li>Producto 1 - 50€</li>
+      <li>Producto 2 - 100€</li>
+      <li>Producto 3 - 75€</li>
+    </ul>
+  </div>
+</ng-template>

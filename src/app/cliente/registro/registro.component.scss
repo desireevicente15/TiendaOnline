@@ -1,0 +1,45 @@
+// Variables
+$primary-orange: #ff6f00;
+
+// Estilos generales
+.auth-bg {
+  background: var(--black);
+  min-height: calc(100vh - 76px); // 76px = altura del header
+}
+
+.auth-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.15);
+      border-color: $primary-orange;
+      box-shadow: 0 0 0 0.25rem rgba(255, 111, 0, 0.25);
+    }
+  }
+}
+
+.btn-primary-auth {
+  background-color: $primary-orange;
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: darken($primary-orange, 10%);
+    transform: translateY(-1px);
+  }
+}
+
+// Ajustes para los placeholders
+::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+} 
+
